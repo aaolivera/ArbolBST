@@ -21,8 +21,7 @@ namespace ArbolBST.Arbol
         private int Altura(Nodo<T> raiz)
         {
             if (raiz == null) return 0;
-            return 1;
-            //return 1 + Math.Max(Altura(raiz.HijoDerecho), Altura(raiz.HijoIzquierdo));
+            return 1 + Math.Max(Altura(raiz.HijoDerecho), Altura(raiz.HijoIzquierdo));
         }
 
         public bool Existe(T dato)
